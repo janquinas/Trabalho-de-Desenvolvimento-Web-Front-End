@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contato — VerdeViva</title>
+  <meta name="description" content="Contato e orçamento — VerdeViva">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bg-white shadow-sm">
+    <nav class="container navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><div class="logo me-2">VV</div>VerdeViva</a>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1>Contato / Solicitar Orçamento</h1>
+    <p class="text-muted">Preencha o formulário e retornaremos em até 48h (simulado).</p>
+
+    <div class="row">
+      <div class="col-lg-8">
+        <form id="contactFormFull" class="card p-3" novalidate>
+          <div class="mb-2">
+            <label for="ct_name" class="form-label">Nome</label>
+            <input id="ct_name" name="name" class="form-control" required>
+            <div class="invalid-feedback">Informe seu nome</div>
+          </div>
+          <div class="mb-2">
+            <label for="ct_email" class="form-label">E-mail</label>
+            <input id="ct_email" name="email" type="email" class="form-control" required>
+            <div class="invalid-feedback">E-mail inválido</div>
+          </div>
+          <div class="mb-2">
+            <label for="ct_phone" class="form-label">Telefone</label>
+            <input id="ct_phone" name="phone" class="form-control" required>
+            <div class="invalid-feedback">Informe um telefone</div>
+          </div>
+          <div class="mb-2">
+            <label for="ct_service" class="form-label">Serviço de interesse</label>
+            <select id="ct_service" name="service" class="form-select">
+              <option>Projeto de Paisagismo</option>
+              <option>Manutenção de Jardins</option>
+              <option>Instalação de Irrigação</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="ct_message" class="form-label">Mensagem</label>
+            <textarea id="ct_message" name="message" class="form-control" rows="4"></textarea>
+          </div>
+          <button class="btn btn-success" type="submit">Enviar</button>
+          <button class="btn btn-outline-secondary ms-2" type="button" id="ct_clear">Limpar</button>
+        </form>
+
+        <div id="ct_result" class="mt-3" aria-live="polite"></div>
+      </div>
+
+      <aside class="col-lg-4">
+        <div class="card p-3">
+          <h5>Contatos</h5>
+          <p class="mb-0">(11) 99999-9999</p>
+          <p><a href="mailto:contato@verdeviva.com">contato@verdeviva.com</a></p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container"> © <span class="current-year"></span> VerdeViva</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

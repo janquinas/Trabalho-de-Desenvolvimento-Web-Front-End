@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Checkout — VerdeViva</title>
+  <meta name="description" content="Finalizar compra — VerdeViva">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bg-white shadow-sm">
+    <nav class="container navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html"><div class="logo me-2">VV</div>VerdeViva</a>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1>Finalizar pedido</h1>
+    <div class="row g-4 mt-3">
+      <div class="col-lg-6">
+        <div class="card p-3" id="orderSummary" aria-live="polite">
+          <!-- Resumo do item selecionado preenchido por JS -->
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <form id="checkoutForm" class="card p-3" novalidate>
+          <h5>Dados do cliente</h5>
+
+          <div class="mb-2">
+            <label for="c_name" class="form-label">Nome</label>
+            <input id="c_name" name="name" class="form-control" required>
+            <div class="invalid-feedback">Informe seu nome</div>
+          </div>
+
+          <div class="mb-2">
+            <label for="c_email" class="form-label">E-mail</label>
+            <input id="c_email" name="email" type="email" class="form-control" required>
+            <div class="invalid-feedback">Informe um e-mail válido</div>
+          </div>
+
+          <div class="mb-2">
+            <label for="c_address" class="form-label">Endereço</label>
+            <input id="c_address" name="address" class="form-control" required>
+            <div class="invalid-feedback">Informe o endereço</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="c_payment" class="form-label">Forma de pagamento (fictícia)</label>
+            <select id="c_payment" name="payment" class="form-select" required>
+              <option value="">Selecione</option>
+              <option>Cartão de crédito</option>
+              <option>Boleto bancário</option>
+              <option>PIX</option>
+            </select>
+            <div class="invalid-feedback">Escolha uma forma de pagamento</div>
+          </div>
+
+          <button type="submit" class="btn btn-success">Confirmar pedido</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Resultado / resumo depois da confirmação -->
+    <div id="result" class="mt-4" aria-live="polite"></div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container"> © <span class="current-year"></span> VerdeViva</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

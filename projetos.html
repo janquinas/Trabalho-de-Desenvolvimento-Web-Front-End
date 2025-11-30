@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projetos — VerdeViva</title>
+  <meta name="description" content="Portfólio de projetos realizados pela VerdeViva">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <nav class="container navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <div class="logo me-2" aria-hidden="true">VV</div>
+        <div>
+          <div class="h5 mb-0">VerdeViva</div>
+          <small class="text-muted">Jardinagem · Paisagismo</small>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navProj"
+        aria-controls="navProj" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navProj">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="projetos.html">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+    <h1 class="mb-3">Nossos Projetos</h1>
+    <p class="text-muted">Veja alguns dos espaços transformados pela VerdeViva, com soluções de paisagismo e jardinagem sob medida.</p>
+
+    <!-- Filtro simples -->
+    <div class="btn-group my-3" role="group" aria-label="Filtro de projetos">
+      <button class="btn btn-outline-success active" data-filter="all">Todos</button>
+      <button class="btn btn-outline-success" data-filter="residencial">Residenciais</button>
+      <button class="btn btn-outline-success" data-filter="comercial">Comerciais</button>
+      <button class="btn btn-outline-success" data-filter="urbano">Urbanos</button>
+    </div>
+
+    <!-- Galeria -->
+    <div class="row g-4" id="projectGrid" aria-live="polite">
+      <div class="col-md-4 project-card" data-category="residencial">
+        <div class="card h-100">
+          <img src="img/jardim1.png" class="card-img-top" alt="Jardim residencial moderno com deck de madeira">
+          <div class="card-body">
+            <h5 class="card-title">Jardim Tropical Residencial</h5>
+            <p class="card-text text-muted">Paisagismo com espécies tropicais e iluminação noturna suave.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 project-card" data-category="comercial">
+        <div class="card h-100">
+          <img src="img/jardim2.png" class="card-img-top" alt="Área verde externa de empresa com bancos de madeira">
+          <div class="card-body">
+            <h5 class="card-title">Área Verde Corporativa</h5>
+            <p class="card-text text-muted">Espaço de convivência sustentável para funcionários de empresa de tecnologia.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 project-card" data-category="urbano">
+        <div class="card h-100">
+          <img src="img/jardim3.png" class="card-img-top" alt="Praça pública com árvores e caminhos de pedra">
+          <div class="card-body">
+            <h5 class="card-title">Praça Jardim das Flores</h5>
+            <p class="card-text text-muted">Revitalização urbana com foco em sustentabilidade e baixo custo de manutenção.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 project-card" data-category="residencial">
+        <div class="card h-100">
+          <img src="img/jardim4.png" class="card-img-top" alt="Varanda com vasos e flores coloridas">
+          <div class="card-body">
+            <h5 class="card-title">Varanda Verde</h5>
+            <p class="card-text text-muted">Aproveitamento de pequenos espaços com floreiras e irrigação automática.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 project-card" data-category="comercial">
+        <div class="card h-100">
+          <img src="img/jardim5.png" class="card-img-top" alt="Fachada de loja com paisagismo vertical">
+          <div class="card-body">
+            <h5 class="card-title">Fachada Verde — Loja Eco</h5>
+            <p class="card-text text-muted">Parede verde com irrigação automatizada, destaque na fachada comercial.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 project-card" data-category="urbano">
+        <div class="card h-100">
+          <img src="img/jardim6.png" class="card-img-top" alt="Canteiro urbano com flores coloridas">
+          <div class="card-body">
+            <h5 class="card-title">Corredor Verde Urbano</h5>
+            <p class="card-text text-muted">Projeto de arborização e embelezamento de avenidas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <div>© <span class="current-year"></span> VerdeViva</div>
+      <div><a class="text-white" href="contato.html">Contato</a></div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // Filtro de projetos
+    document.querySelectorAll('[data-filter]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.project-card').forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+    // Atualiza ano
+    document.getElementById('yearProj').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
