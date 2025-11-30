@@ -1,7 +1,3 @@
-/* ==========================================================
-   🌿 VerdeViva — Estilo Principal
-   Design limpo, responsivo e elegante com base em Bootstrap 5
-   ========================================================== */
 
 /* ---------- Paleta e fontes ---------- */
 :root {
@@ -376,4 +372,5 @@ blockquote {
   border: none;
   background: none;
   padding: 0;
+
 }
